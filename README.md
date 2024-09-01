@@ -9,4 +9,9 @@
     * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
   * df[df['id'].isin(df['other_id'])]
     * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
-
+   
+* **Column manipulations**
+  * series.apply()
+    * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
+    * Example: df['some_string'].apply(len)
+      * This can product a new column that counts the char length of each entry in the 'some_string' column. We pass the function len() to the apply method.
