@@ -15,3 +15,7 @@
     * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
     * Example: df['some_string'].apply(len)
       * This can product a new column that counts the char length of each entry in the 'some_string' column. We pass the function len() to the apply method.
+  * series.isna()
+    * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
+    * Example: df['customerId'].isna()
+      * Can help you select columns that are or are not NA
