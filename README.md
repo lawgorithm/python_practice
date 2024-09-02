@@ -23,6 +23,10 @@
     * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
     * Example: df['customerId'].isna()
       * Can help you select columns that are or are not NA
+  * series.str.contains(pattern)
+    * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
+    * Example: df['conditions'].str.contains(r'(^DIAB1)|( DIAB1)')
+      * Vector of booleans
   * series.str.fullmatch(pattern)
     * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
     * Example: df['mail'].str.fullmatch(r'^[a-zA-Z][a-zA-Z0-9_.-]*@leetcode\.com')
