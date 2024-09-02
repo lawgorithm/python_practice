@@ -1,5 +1,9 @@
 # python_practice
 
+* **Indexing**
+  * df.loc[row_cond, col]
+    * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
+
 * **Filtering**
   * df.drop_duplicates()
     * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
