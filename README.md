@@ -7,6 +7,11 @@
 * **DF Indexing**
   * df.loc[row_cond, col]
     * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
+   
+* **DF Aggregation**
+  * df.groupby(['col1', 'col2], as_index=False).agg(agg_col_name = ('col_name', 'agg_fun_name'))
+    * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
+    * Example: df.groupby(['player_id'], as_index=False).agg(first_login=('event_date', 'min'))
 
 * **Series Filtering**
   * df.drop_duplicates()
