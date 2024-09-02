@@ -17,17 +17,17 @@
     * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
     * Example: df.groupby(['player_id'], as_index=False).agg(first_login=('event_date', 'min'))
     * Example: df.groupby('teacher_id', as_index=False).agg(cnt = ('subject_id', 'nunique'))
-    * Example: df.groupby('sell_date', as_index=False).agg(
-        num_sold = ('product', 'nunique'),
-        products = ('product', lambda x: ','.join(
-            sorted(x.unique())))
-        )
+    * Example: df.groupby('obs', as_index=False).agg(E_obs = ('product', 'mean'), sd_obs = ('product', 'std'))
   * df.groupby().nunique()
     * Count unique values
   * df.groupby().count()
     * Count num rows
   * df.groupby().mode()
     * Get most common value
+  * df.groupby().mean()
+    * mean
+  * df.groupby().std()
+    * Standard deviation
 
 * **Series Filtering**
   * df.drop_duplicates()
