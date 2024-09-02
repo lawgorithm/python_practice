@@ -3,6 +3,10 @@
 * **DF Initialization**
   * df = pd.DataFrame({f'col1': [val0, ..., valn]})
     * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
+    * Initialize DF with dict that maps column names to list of column values
+  * df = pd.DataFrame(columns=['col1', 'col2'])
+    * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
+    * Initialize DF with column names but no rows
 
 * **DF Indexing**
   * df.loc[row_cond, col]
@@ -12,6 +16,11 @@
   * df.groupby(['col1', 'col2], as_index=False).agg(agg_col_name = ('col_name', 'agg_fun_name'))
     * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
     * Example: df.groupby(['player_id'], as_index=False).agg(first_login=('event_date', 'min'))
+    * Example: df.groupby('teacher_id', as_index=False).agg(cnt = ('subject_id', 'nunique'))
+  * df.groupby().nunique()
+    * Count unique values
+  * df.groupby().count()
+    * Count num rows
 
 * **Series Filtering**
   * df.drop_duplicates()
