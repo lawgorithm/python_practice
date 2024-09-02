@@ -40,7 +40,7 @@
     * Example (unique sorted salaries): df['salary'].drop_duplicates().sort_values(ascending=False)
   * Series.rank()
     * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
-    * Example (reverse ranks -- dense mean [1,2,2,3] instead of [1,2,2,4]. Use 'min' for the latter): df['score'].rank(method='dense', ascending = False)
+    * Example (reverse ranks -- 'dense' means [1,2,2,3] instead of [1,2,2,4]. Use 'min' for the latter): df['score'].rank(method='dense', ascending = False)
 * **Column/Series Indexing**
   * Series.iloc[N]
     * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
