@@ -11,13 +11,15 @@
 * **Series Filtering**
   * df.drop_duplicates()
     * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
+    * Drop duplicate rows
   * df.rename(columns={'old_name': 'new_name'})
     * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
   * df.sort_values(by=['id'], ascending=True)
     * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
   * df[df['id'].isin(df['other_id'])]
     * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
-   
+  * df.drop(columns = ['col1', 'col2'])
+    * Drop some columns  
 * **Column/Series manipulations**
   * Series.apply()
     * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
