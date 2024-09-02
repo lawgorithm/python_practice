@@ -21,6 +21,8 @@
     * Count unique values
   * df.groupby().count()
     * Count num rows
+  * df.groupby().mode()
+    * Get most common value
 
 * **Series Filtering**
   * df.drop_duplicates()
