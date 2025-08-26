@@ -29,6 +29,10 @@
   * df.groupby().std()
     * Standard deviation
 
+* **DF Filtering**
+  * df.query('(age >= 21) & (can_drive == True)')
+    * Note, this is powerful: filters = ' & '.join(filter_list)
+
 * **Series Filtering**
   * df.drop_duplicates()
     * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
