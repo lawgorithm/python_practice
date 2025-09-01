@@ -32,6 +32,9 @@
     * mean
   * df.groupby().std()
     * Standard deviation
+  * quantiles = df.groupby('product_category').agg(
+        sales_q25 = ('sales_amount', lambda x: x.quantile([0.25])))
+    * Arbitrary quantiles
 
 * **DF Filtering**
   * df.query('(age >= 21) & (can_drive == True)')
@@ -79,4 +82,8 @@
   * df.melt()
     * TODO
   * pd.concat([df1, df2, df3])
-    * Stacking DFs with same column names
+    * Stacking DFs with same column names, like UNION ALL
+  * df1.merge(df2, on=['id'], how='left')
+    * Joins
+    * Case where the join key has different names in each df:
+      * df1.merge(df2, left_on='id_1', right_on='id_2', how='left')
