@@ -18,6 +18,10 @@
     * Example: df.groupby(['player_id'], as_index=False).agg(first_login=('event_date', 'min'))
     * Example: df.groupby('teacher_id', as_index=False).agg(cnt = ('subject_id', 'nunique'))
     * Example: df.groupby('obs', as_index=False).agg(E_obs = ('product', 'mean'), sd_obs = ('product', 'std'))
+  * df.groupby(['col1'], as_index=False).agg(
+        product_list = ('product', lambda x: list(x))
+    )
+    * Example of arbitrary aggregragation with lambda function
   * df.groupby().nunique()
     * Count unique values
   * df.groupby().count()
