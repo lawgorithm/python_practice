@@ -39,6 +39,12 @@
 * **DF Filtering**
   * df.query('(age >= 21) & (can_drive == True)')
     * Note, this is powerful: filters = ' & '.join(filter_list)
+   
+* **DF and Series Null / NA handling**
+  * df.fillna(value)
+    * Fill all NAs in the DF with value (for example, value=0)
+  * df['col'].fillna(value, inplace=True)
+    * Fill all NAs in the series/column with value (for example, value=0)
 
 * **Series Filtering**
   * df.drop_duplicates(subset='colname_w_dupes', keep='first', inplace=True)
