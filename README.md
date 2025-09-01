@@ -83,7 +83,9 @@
     * TODO
   * pd.concat([df1, df2, df3])
     * Stacking DFs with same column names, like UNION ALL
-  * df1.merge(df2, on=['id'], how='left')
-    * Joins
+  * Joins
+    * df1.merge(df2, on=['id'], how='left')
     * Case where the join key has different names in each df:
       * df1.merge(df2, left_on='id_1', right_on='id_2', how='left')
+    * df1.merge(df2, how='cross')
+      * cross join
