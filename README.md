@@ -71,3 +71,8 @@
 * **Column/Series Indexing**
   * Series.iloc[N]
     * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
+* **DF Reshaping and combining**
+  * df.melt()
+    * TODO
+  * pd.concat([df1, df2, df3])
+    * Stacking DFs with same column names
