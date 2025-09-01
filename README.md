@@ -34,7 +34,7 @@
     * Note, this is powerful: filters = ' & '.join(filter_list)
 
 * **Series Filtering**
-  * df.drop_duplicates()
+  * df.drop_duplicates(subset='colname_w_dupes', keep='first', inplace=True)
     * [30 Days of Pandas.ipynb](https://github.com/lawgorithm/python_practice/blob/main/30_Days_of_Pandas.ipynb)
     * Drop duplicate rows
   * df.rename(columns={'old_name': 'new_name'})
